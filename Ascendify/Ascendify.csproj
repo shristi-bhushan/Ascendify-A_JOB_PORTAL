@@ -67,6 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\ContactList.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\jobList.aspx" />
+    <Content Include="Admin\NewJob.aspx" />
+    <Content Include="Admin\ViewResume.aspx" />
     <Content Include="assets\css\animate.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\flaticon.css" />
@@ -79,6 +84,8 @@
     <Content Include="assets\css\slick.css" />
     <Content Include="assets\css\slicknav.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\css\theme.css" />
     <Content Include="assets\css\themify-icons.css" />
     <Content Include="assets\fonts\fa-brands-400.svg" />
     <Content Include="assets\fonts\fa-regular-400.svg" />
@@ -135,27 +142,24 @@
     <Content Include="assets\img\elements\success-check.png" />
     <Content Include="assets\img\elements\success-radio.png" />
     <Content Include="assets\img\favicon.ico" />
-    <Content Include="assets\img\gallery\1.png" />
-    <Content Include="assets\img\gallery\2.png" />
-    <Content Include="assets\img\gallery\3.png" />
     <Content Include="assets\img\gallery\cv_bg.jpg" />
     <Content Include="assets\img\gallery\how-applybg.png" />
+    <Content Include="assets\img\gallery\resume_bg.jpg" />
     <Content Include="assets\img\hero\about.jpg" />
     <Content Include="assets\img\hero\h1_hero.jpg" />
+    <Content Include="assets\img\hero\hero_img.jpg" />
+    <Content Include="assets\img\icon\edit.png" />
     <Content Include="assets\img\icon\form.png" />
     <Content Include="assets\img\icon\job-list1.png" />
     <Content Include="assets\img\icon\job-list2.png" />
     <Content Include="assets\img\icon\job-list3.png" />
     <Content Include="assets\img\icon\job-list4.png" />
-    <Content Include="assets\img\logo\Ascendify_logo.png" />
-    <Content Include="assets\img\logo\form-iocn.jpg" />
-    <Content Include="assets\img\logo\job-portal.png" />
+    <Content Include="assets\img\icon\trash.png" />
     <Content Include="assets\img\logo\loading.png" />
     <Content Include="assets\img\logo\loder.jpg" />
     <Content Include="assets\img\logo\logo.png" />
     <Content Include="assets\img\logo\logo2_footer.png" />
-    <Content Include="assets\img\logo\select-items-icon.jpg" />
-    <Content Include="assets\img\logo\testimonial.png" />
+    <Content Include="assets\img\logo\main-logo.png" />
     <Content Include="assets\img\offers\1.png" />
     <Content Include="assets\img\offers\2.png" />
     <Content Include="assets\img\offers\3.png" />
@@ -220,20 +224,119 @@
     <Content Include="assets\js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="assets\js\wow.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="User\About.aspx" />
+    <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
+    <Content Include="User\JobDetails.aspx" />
+    <Content Include="User\JobListing.aspx" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\Profile.aspx" />
+    <Content Include="User\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContactList.aspx.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactList.aspx.designer.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\jobList.aspx.cs">
+      <DependentUpon>jobList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\jobList.aspx.designer.cs">
+      <DependentUpon>jobList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewJob.aspx.cs">
+      <DependentUpon>NewJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewJob.aspx.designer.cs">
+      <DependentUpon>NewJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewResume.aspx.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewResume.aspx.designer.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\dataListCommandEventArgs.cs" />
     <Compile Include="User\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\JobDetails.aspx.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\JobDetails.aspx.designer.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\JobListing.aspx.cs">
+      <DependentUpon>JobListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\JobListing.aspx.designer.cs">
+      <DependentUpon>JobListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\UserMaster.Master.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
@@ -291,6 +394,7 @@
     <Content Include="assets\scss\_team.scss" />
     <Content Include="assets\scss\_testimonial.scss" />
     <Content Include="assets\scss\_variables.scss" />
+    <Content Include="Admin\AdminMaster.Master" />
     <None Include="packages.config" />
     <Content Include="User\UserMaster.Master" />
     <None Include="Web.Debug.config">
@@ -301,8 +405,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
