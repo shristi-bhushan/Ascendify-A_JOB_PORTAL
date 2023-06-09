@@ -4,6 +4,7 @@ using System.ComponentModel.Design;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -48,6 +49,10 @@ namespace Ascendify.Admin
             sda.Fill(dt);
             GridView1.DataSource = dt;
             GridView1.DataBind();
+            if (Request.QueryString["id"] != null)
+            {
+                linkBack.Visible = true;
+            }
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -77,8 +82,7 @@ namespace Ascendify.Admin
                 {
                     lblMsg.Text = "Cannot delete this record!";
                     lblMsg.CssClass = "alert alert-danger";
-                }
-                con.Close();    
+                }    
                 GridView1.EditIndex = -1;
                 ShowJob();
             }
@@ -87,6 +91,10 @@ namespace Ascendify.Admin
                 con.Close();
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
+            finally
+            {
+                con.Close();
+            }
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -94,6 +102,22 @@ namespace Ascendify.Admin
             if (e.CommandName == "EditJob")
             {
                 Response.Redirect("NewJob.aspx?id=" + e.CommandArgument.ToString() );
+            }
+        }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                e.Row.ID = e.Row.RowIndex.ToString();
+                if (Request.QueryString["id"] != null)
+                {
+                    int jobId = Convert.ToInt32((int)GridView1.DataKeys[e.Row.RowIndex].Value);
+                    if (jobId == Convert.ToInt32(Request.QueryString["id"]))
+                    {
+                        e.Row.BackColor = ColorTranslator.FromHtml("#A1DCF2");
+                    }
+                }
             }
         }
     }

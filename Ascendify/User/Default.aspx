@@ -8,19 +8,19 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="../assets/img/hero/hero_img.jpg"">
+                <div class=" align-items-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-9 col-md-10">
+                            <div class="col-xl-6 col-lg-9 col-md-10 d-flex-new">
                                 <div class="hero__caption">
-                                    <h1>Searching jobs!</h1>
+                                    <h1>Discover Your Path to Success!</h1>
                                     <h2><b>Here you go..</b></h2>
                                 </div>
+                               <image src="../assets/img/hero/hero_img.png" width="100%"/>
                             </div>
                         </div>
                         <!-- Search Box -->
-                        <div class="row">
-                            <div class="col-xl-8">
+                        
                                 <%--<!-- form -->
                                 <form action="#" class="search-box">
                                     <div class="input-form">
@@ -41,20 +41,19 @@
                                     </div>	
                                 </form>	--%>
                             </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <!-- slider Area End-->
         <!-- Our Services Start -->
-        <div class="our-services section-pad-t30">
+        <div class="our-services">
             <div class="container">
                 <!-- Section Tittle -->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>FEATURED TOURS Packages</span>
+        
                             <h2>Browse Top Categories </h2>
                         </div>
                     </div>
@@ -66,8 +65,8 @@
                                 <span class="flaticon-tour"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Creative</a></h5>
-                                <span>(653)</span>
+                               <h5><a>Design & Creative</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -77,8 +76,8 @@
                                 <span class="flaticon-cms"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Development</a></h5>
-                                <span>(658)</span>
+                               <h5><a >Design & Development</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -88,8 +87,8 @@
                                 <span class="flaticon-report"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Sales & Marketing</a></h5>
-                                <span>(658)</span>
+                               <h5><a >Sales & Marketing</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -99,8 +98,8 @@
                                 <span class="flaticon-app"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Mobile Application</a></h5>
-                                <span>(658)</span>
+                               <h5><a >Mobile Application</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -110,8 +109,8 @@
                                 <span class="flaticon-helmet"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Construction</a></h5>
-                                <span>(658)</span>
+                               <h5><a>Construction</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -121,8 +120,8 @@
                                 <span class="flaticon-high-tech"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Information Technology</a></h5>
-                                <span>(658)</span>
+                               <h5><a>Information Technology</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -132,8 +131,8 @@
                                 <span class="flaticon-real-estate"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Real Estate</a></h5>
-                                <span>(658)</span>
+                               <h5><a >Real Estate</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -143,8 +142,8 @@
                                 <span class="flaticon-content"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Content Writer</a></h5>
-                                <span>(658)</span>
+                               <h5><a >Content Writer</a></h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -154,7 +153,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="browse-btn2 text-center mt-50">
-                            <a href="job_listing.html" class="border-btn2">Browse All Sectors</a>
+                            <a href="JobListing.aspx" class="border-btn2 mb-30">Browse All Sectors</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +168,7 @@
                         <div class="cv-caption text-center">
                             <%--<p class="pera1">FEATURED TOURS Packages</p>--%>
                             <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                            <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
+                            <a href="Profile.aspx" class="border-btn2 border-btn4">Upload your cv</a>
                         </div>
                     </div>
                 </div>
@@ -189,96 +188,79 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
+                    <a href="JobDetails.aspx">JobDetails.aspx</a>
                     <div class="col-xl-10">
                         <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="../assets/img/icon/job-list1.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="job_details.html">Full Time</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
-                        <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="../assets/img/icon/job-list2.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="job_details.html">Full Time</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
-                         <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="../assets/img/icon/job-list3.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="job_details.html">Full Time</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
-                         <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="../assets/img/icon/job-list4.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="job_details.html">Full Time</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
+                        <div class="job-individual">
+
+                        <asp:DataList ID="DataList1" runat="server">
+                            
+
+                                    <ItemTemplate>
+
+                                        <div class="single-job-items-default-page mb-30">
+                                            
+
+                                            <div class="job-items">
+
+                                                <div class="company-img">
+
+        
+
+                                                </div>
+
+                                                <div class="job-tittle job-tittle2">
+
+                                                    <a href="JobDetails.aspx?id=<%# Eval("JobId") %>">
+
+                                                        <h5><%# Eval("Title") %></h5>
+
+                                                    </a>
+
+                                                    <ul>
+
+                                                        <li><%# Eval("CompanyName") %></li>
+
+                                                        <li><i class="fas fa-map-marker-alt"></i><%# Eval("State") %>, <%# Eval("Country") %></li>
+
+                                                        <li><%# Eval("Salary") %></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="items-link items-link2 f-right">
+
+                                                <a href="JobDetails.aspx?id=<%# Eval("JobId") %>"><%# Eval("JobType") %></a>
+
+                                                <span class="text-secondary">
+
+                                                    <i class="fas fa-clock pr-1"></i>
+
+                                                    <%# RelativeDate(Convert.ToDateTime(Eval("CreateDate"))) %>
+
+                                                </span>
+
+                                            </div>
+                                             </div>
+                                     
+
+                                    </ItemTemplate>
+                                  
+                                </asp:DataList>
+                             </div>
+
+                      
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Featured_job_end -->
-        <!-- How  Apply Process Start-->
+
         <div class="apply-process-area apply-bg pt-150 pb-150" data-background="../assets/img/gallery/how-applybg.png">
             <div class="container">
-                <!-- Section Tittle -->
+        
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle white-text text-center">
@@ -287,7 +269,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Apply Process Caption -->
+       
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-process text-center mb-30">
@@ -296,7 +278,7 @@
                             </div>
                             <div class="process-cap">
                                <h5>1. Search a job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+                               <p>Explore and discover a world of job possibilities. Search and find your ideal job now, and pave the way to a fulfilling career of your choice.</p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +289,7 @@
                             </div>
                             <div class="process-cap">
                                <h5>2. Apply for job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+                               <p>Apply for jobs that align with your aspirations. Showcase your talents and stand out as the perfect fit for your desired role.</p>
                             </div>
                         </div>
                     </div>
@@ -318,164 +300,42 @@
                             </div>
                             <div class="process-cap">
                                <h5>3. Get your job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+                               <p>Secure the job you've been longing for. Let us guide you towards professional fulfillment and the start of a rewarding journey.</p>
                             </div>
                         </div>
                     </div>
                 </div>
              </div>
         </div>
-        <!-- How  Apply Process End-->
-       <%-- <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
-            <div class="container">
-                <!-- Testimonial contents -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-md-10">
-                        <div class="h1-testimonial-active dot-style">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->--%>
-        <%-- <!-- Support Company Start-->
+      
          <div class="support-company-area support-padding fix">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6">
-                        <div class="right-caption">
+                        <div class="right-caption mt-30 mb-30">
                             <!-- Section Tittle -->
                             <div class="section-tittle section-tittle2">
                                 <span>What we are doing</span>
-                                <h2>24k Talented people are getting Jobs</h2>
-                            </div>--%>
-                            <div class="support-caption">
-                                <%--<p class="pera-top">Mollit anim laborum duis au dolor in voluptate velit ess cillum dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillum.</p>
-                                <p>Mollit anim laborum.Duis aute irufg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur signjnt occa cupidatat non inulpadeserunt mollit aboru. temnthp incididbnt ut labore mollit anim laborum suis aute.</p>
-                               --%> <a href="about.html" class="btn post-btn">Post a job</a>
+                                <h2>Unleash Your Career Potential</h2>
                             </div>
-                      <%--  </div>
-                    </div>--%>
+                            <div class="support-caption">
+                                <p class="pera-top">Discover, Connect, and Grow with Ascendify Job Platform!
+
+Find your dream job and embrace professional fulfillment. Join our growing community of successful job seekers. Experience meaningful opportunities that align with your ambitions. Join Ascendify now!</p>
+                                <a href="../Admin/NewJob.aspx" class="btn post-btn">Post a job</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="support-location-img">
-                            <img src="../assets/img/service/support-img.jpg" alt="">
-                            <%--<div class="support-img-cap text-center">
-                                <p>Since</p>
-                                <span>1994</span>
-                            </div>--%>
-                        </div>
-                    </div>
-               <%-- </div>
-            </div>
-        </div>--%>
-        <!-- Support Company End-->
-       <%-- <!-- Blog Area Start -->
-        <div class="home-blog-area blog-h-padding">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>Our latest blog</span>
-                            <h2>Our recent news</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="../assets/img/blog/home-blog1.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>|   Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="../assets/img/blog/home-blog2.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>|   Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
+                            <img src="../assets/img/hero/hero_img-1.jpg" alt="">
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog Area End -->--%>
+     
 
     </main>
 </asp:Content>

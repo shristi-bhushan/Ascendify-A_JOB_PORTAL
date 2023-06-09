@@ -148,19 +148,19 @@
 
                 background-color: #FFF;
 
-                padding-left: 6px;
+                padding-left: 15px;
 
-                padding-right: 6px;
+                padding-right: 15px;
 
-                padding-top: 2px;
+                padding-top: 10px;
 
-                padding-bottom: 2px;
+                padding-bottom: 10px;
 
                 border: 1px solid #FF4357;
 
-                border-radius: 10%;
+                border-radius: 10px;
 
-                margin: 0px 0px 0px 0px;
+                margin-bottom:"20px";
 
                 white-space: nowrap;
 
@@ -180,9 +180,6 @@
                 font-weight: bold;
 
                 border-bottom-color: #F3F2E7;
-
-                padding-top: 4px;
-
             }
 
 
@@ -448,7 +445,7 @@
 
                                     <ItemTemplate>
 
-                                        <div class="single-job-items mb-30">
+                                        <div class="single-job-items-default-page mb-30">
 
                                             <div class="job-items">
 

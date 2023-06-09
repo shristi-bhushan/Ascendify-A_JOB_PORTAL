@@ -71,6 +71,7 @@
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\jobList.aspx" />
     <Content Include="Admin\NewJob.aspx" />
+    <Content Include="Admin\UserList.aspx" />
     <Content Include="Admin\ViewResume.aspx" />
     <Content Include="assets\css\animate.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
@@ -147,7 +148,8 @@
     <Content Include="assets\img\gallery\resume_bg.jpg" />
     <Content Include="assets\img\hero\about.jpg" />
     <Content Include="assets\img\hero\h1_hero.jpg" />
-    <Content Include="assets\img\hero\hero_img.jpg" />
+    <Content Include="assets\img\hero\hero_img-1.jpg" />
+    <Content Include="assets\img\hero\hero_img.png" />
     <Content Include="assets\img\icon\edit.png" />
     <Content Include="assets\img\icon\form.png" />
     <Content Include="assets\img\icon\job-list1.png" />
@@ -232,6 +234,7 @@
     <Content Include="User\Login.aspx" />
     <Content Include="User\Profile.aspx" />
     <Content Include="User\Register.aspx" />
+    <Content Include="User\ResumeBuild.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -269,6 +272,13 @@
     </Compile>
     <Compile Include="Admin\NewJob.aspx.designer.cs">
       <DependentUpon>NewJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ViewResume.aspx.cs">
       <DependentUpon>ViewResume.aspx</DependentUpon>
@@ -338,6 +348,13 @@
     <Compile Include="User\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\ResumeBuild.aspx.cs">
+      <DependentUpon>ResumeBuild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ResumeBuild.aspx.designer.cs">
+      <DependentUpon>ResumeBuild.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\UserMaster.Master.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -345,6 +362,7 @@
     <Compile Include="User\UserMaster.Master.designer.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\fa-brands-400.eot" />
@@ -408,6 +426,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Models\" />
+    <Folder Include="Resumes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

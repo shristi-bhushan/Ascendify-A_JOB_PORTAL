@@ -5759,7 +5759,11 @@ b, sup, sub, u, del {
 }
 
     .slider-area .hero__caption {
-        padding-right: 29px
+        
+    }
+    .gap-10{
+        display:flex;
+        justify-content:space-between;
     }
 
 @media (max-width: 767px) {
@@ -6551,7 +6555,6 @@ form.search-box .search-form a {
         font-weight: 700;
         color: #0b0b2b
     }
-
 .single-job-items {
     padding: 36px 30px;
     display: flex;
@@ -6651,6 +6654,130 @@ form.search-box .search-form a {
 .single-job-items .job-items {
     display: flex;
     flex-wrap: wrap
+}
+
+
+
+
+
+.single-job-items-default-page {
+    padding: 36px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-job-items-default-page {
+        padding: 20px 7px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-job-items-default-page {
+        padding: 20px 25px
+    }
+}
+
+.single-job-items-default-page .company-img img {
+    overflow: hidden;
+    float: left;
+    margin-right: 32px;
+    z-index: 999
+}
+
+@media (max-width: 767px) {
+    .single-job-items-default-page .job-tittle {
+        padding-top: 25px
+    }
+}
+
+.single-job-items-default-page .job-tittle a h4 {
+    color: #28395a;
+    font-size: 24px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+    .single-job-items-default-page .job-tittle a h4:hover {
+        color: #8b92dd
+    }
+
+.single-job-items-default-page .job-tittle ul li {
+    display: inline-block;
+    margin-right: 48px;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.8
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-job-items-default-page .job-tittle ul li {
+        margin-right: 18px
+    }
+}
+
+@media (max-width: 767px) {
+    .single-job-items-default-page .job-tittle ul li {
+        margin-right: 0px;
+        margin-bottom: 7px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-job-items-default-page .job-tittle ul li {
+        margin-right: 8px
+    }
+}
+
+.single-job-items-default-page .job-tittle ul li:last-child {
+    margin-right: 0px
+}
+
+.single-job-items-default-page .job-tittle ul li i {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-right: 10px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-job-items-default-page .job-tittle2 {
+        padding-top: 25px
+    }
+}
+.hero__caption > h1, h2{
+    padding-right:"10%";
+}
+
+.d-flex-new{
+    border:solid 3px #8b92dd;
+    border-radius: 7px;
+    display:flex;
+    justify-content:space-between;
+    gap:10%;
+    flex-direction:row;
+    align-items:center
+}
+
+.single-job-items-default-page:hover {
+    box-shadow: 0px 22px 57px 0px rgba(34,41,72,0.05)
+}
+
+.single-job-items-default-page .job-items {
+    display: flex;
+    flex-wrap: wrap
+}
+.job-individual {
+    display: flex;
+    border-collapse: collapse;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

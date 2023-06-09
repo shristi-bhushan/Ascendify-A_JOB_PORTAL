@@ -82,7 +82,7 @@ namespace Ascendify.Admin
                 {
                     if (fuCompanyLogo.HasFile)
                     {
-                        if (IsValidExtension(fuCompanyLogo.FileName))
+                        if (Utils.IsValidExtension(fuCompanyLogo.FileName))
                         {
                             concatQuery = "CompanyImage= @CompanyImage";
                         }
@@ -232,19 +232,6 @@ namespace Ascendify.Admin
             ddlJobType.ClearSelection();
         }
 
-        private bool IsValidExtension(string fileName)
-        {
-            bool isValid = false;
-            string[] fileExtension = { ".jpg", ".png", ".jpeg" };
-            for (int i = 0; i <= fileExtension.Length - 1; i++)
-            {
-                if (fileName.Contains(fileExtension[i]))
-                {
-                    isValid = true;
-                    break;
-                }
-            }
-            return isValid;
-        }
+
     }
 }

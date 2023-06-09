@@ -127,6 +127,31 @@ body {
     transition: all 0.3s ease;
 }
 
+@media (min-width: 1200px) {
+    .container-new {
+        max-width: unset !important;
+    }
+}
+
+@media (min-width: 990px) {
+    .container-new {
+        max-width: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-new {
+        max-width: auto !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-new {
+        max-width: auto !important;
+    }
+}
+
+
     .sidebar .logout_btn a:hover {
         background: #3d0b66;
         color: #fff;

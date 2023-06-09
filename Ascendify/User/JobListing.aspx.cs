@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 using System.Security.Cryptography;
 
 namespace Ascendify.User
-{
+{ 
     public partial class JobListing : System.Web.UI.Page
     {
         SqlConnection con;
